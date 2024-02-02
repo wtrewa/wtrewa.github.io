@@ -1,8 +1,8 @@
 
 
 
-
-import { CloseIcon, HamburgerIcon, SearchIcon } from '@chakra-ui/icons'
+import CV from '../Resume/CV.pdf'
+import { CloseIcon, DownloadIcon, HamburgerIcon, SearchIcon } from '@chakra-ui/icons'
 import { Box, Button, Flex, HStack, IconButton, Link, useDisclosure ,Stack, Drawer,
   DrawerBody,
   DrawerFooter,
@@ -51,7 +51,7 @@ const Navbar = () => {
               display={{ base: "none", md: "flex" }}
             >
               { Links.map((el)=>
-           (<Link key={el.id} fontSize={'20px'} fontWeight={500} lineHeight={'75px'} px={15} id={el.id} href={el.href} color={"#D5FFD0"} textDecoration={'none'}>
+           (<Link key={el.class} fontSize={'20px'} fontWeight={500} lineHeight={'75px'} px={15} className={el.class} href={el.href} color={"#D5FFD0"} textDecoration={'none'}>
            {el.title}
           </Link>)
         )}
@@ -70,7 +70,28 @@ const Navbar = () => {
                   id="resume-button-1"
                   
                 >
-                 <a href='https://drive.google.com/file/d/1HPkPDd0-AvgcvCTpRTQqyMWOPMCqnkA_/view?usp=sharing'>Resume</a>
+                  <button
+              id="resume-button-1"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1CqsXPHjrSEQzpjKRHFz6VzudQgE3E4Cf/view"
+                )
+              }
+            >
+              <a
+                href={CV}
+                target="_blank"
+                download="Saurabh-Pandey-Resume"
+                id="resume-link-1"
+                className="nav-link resume"
+                style={{display:"flex" , flexDirection:"row"}}
+              >
+                Resume
+                <span>
+                  <DownloadIcon color={"white"}/>
+                </span>
+              </a>
+            </button>
                 </Button>
               </Box>
             </HStack>
@@ -106,7 +127,7 @@ const Navbar = () => {
                   id="resume-button-1"
                   
                 >
-                <a href='https://drive.google.com/file/d/1HPkPDd0-AvgcvCTpRTQqyMWOPMCqnkA_/view?usp=sharing'>Resume</a>
+                <a href='https://drive.google.com/file/d/1CqsXPHjrSEQzpjKRHFz6VzudQgE3E4Cf/view'>Resume</a>
                 </Button>
               </Box>
             </VStack>

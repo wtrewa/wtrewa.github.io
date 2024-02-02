@@ -9,6 +9,8 @@ import particles from '../Utils/Particles';
 import Projects from './Projects';
 import Contact from './Contact';
 import Student from '../Images/Student.jpg';
+import CV from '../Resume/CV.pdf'
+
 
 
 import {
@@ -22,12 +24,13 @@ import {
   Image,
 } from "@chakra-ui/react";
 import TypeWritter from '../Components/Typewritter';
+import { DownloadIcon } from '@chakra-ui/icons';
 
 const handleDownload = () => {
   const link = document.createElement("a");
   link.click();
   window.open(
-    "https://drive.google.com/file/d/1HPkPDd0-AvgcvCTpRTQqyMWOPMCqnkA_/view?usp=sharing",
+    "https://drive.google.com/file/d/1CqsXPHjrSEQzpjKRHFz6VzudQgE3E4Cf/view",
     "_blank"
   );
 };
@@ -82,7 +85,28 @@ const HomePages = () => {
                   }}
                   onClick={handleDownload}
                 >
-                  Resume
+                  <button
+              id="resume-button-1"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1CqsXPHjrSEQzpjKRHFz6VzudQgE3E4Cf/view"
+                )
+              }
+            >
+              <a
+                href={CV}
+                target="_blank"
+                download="Saurabh-Pandey-Resume"
+                id="resume-link-1"
+                className="nav-link resume"
+                style={{display:"flex" , flexDirection:"row"}}
+              >
+                Resume
+                <span>
+                  <DownloadIcon color={"white"}/>
+                </span>
+              </a>
+            </button>
                 </Button>
               </Box>
             </Stack>

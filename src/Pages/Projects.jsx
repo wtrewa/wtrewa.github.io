@@ -18,7 +18,7 @@ import {
 
 // import Doctor from "../images/doctor.png";
  
-
+import trigger from '../Images/trigger.png'
 import sandstorm from '../Images/sandstorm.png'
 import lyfcare from '../Images/lyfcare.png'
 import justserve from '../Images/justserve.png'
@@ -60,6 +60,32 @@ const projectsArray = [
   //   ],
   // },
   
+  {
+    logo: trigger,
+    title: "Trigger",
+    github: "https://github.com/wtrewa/mucho-tent-9336",
+    live_Link: "https://animated-quokka-2d07b1.netlify.app/",
+    description:
+      "This is car rental website where user can choose their destination and car as well. This website build upon useing HTML CSS Javascript",
+
+      techStack: [
+        {
+          image:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+          link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        },
+        {
+          image:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg",
+          link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        },
+        {
+          image:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+          link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        },
+      ],
+  },
   {
     logo: lyfcare,
     title: "Lyf Care",
@@ -114,8 +140,8 @@ const projectsArray = [
   {
     logo: justserve,
     title: "Just Serve",
-    github: "https://github.com/AnshKathpal/dizzy-vase-3091",
-    live_Link: "justserve-anshkathpal.vercel.app/",
+    github: "https://github.com/AnshKathpal/Just-Serve",
+    live_Link: "https://justserve-anshkathpal.vercel.app/",
     description:
       `Our job listings include opportunities spanning a variety of
       nonprofits, social-impact businesses, and corporate social
@@ -141,6 +167,7 @@ const projectsArray = [
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       },
+      
     ],
   },
 ];
