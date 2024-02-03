@@ -1,4 +1,4 @@
-import { Container, Box, Center, Grid, Image, Text } from '@chakra-ui/react'
+import { Container, Box, Center, Grid, Image, Text, Heading } from '@chakra-ui/react'
 import React from 'react'
 import MyGithub from '../Components/MyGithub'
 
@@ -39,6 +39,20 @@ const About = () => {
               Bachelor of Technology in Civil (B.tech) Aug, 2017 - July, 2021
             </Text>
           </Box>
+            </Grid>
+            </Center>
+            <Center fontSize={{ base: 28, md: 40 }} my={2} color="whiteAlpha.700" position="relative">
+        <Text fontWeight={600}>GitHub Stats</Text>
+      </Center>
+      <Center>
+        <Grid
+          position="relative"
+          templateColumns={{
+            base: "repeat(1, 1fr)",
+            md: "repeat(2, 1fr)",
+          }}
+          gap="5px"
+        >
           <Box width="100%" m="5px">
             <Image
               id="github-stats-card"
@@ -65,8 +79,8 @@ const About = () => {
               alt="wtrewa"
             />
           </Box>
-        </Grid>
-      </Center>
+          </Grid>
+          </Center>
       <MyGithub />
     </Box>
   </Container>
