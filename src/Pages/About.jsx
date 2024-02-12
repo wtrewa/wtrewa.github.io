@@ -5,8 +5,8 @@ import MyGithub from '../Components/MyGithub'
 
 const About = () => {
   return (
-     <Container maxW="container.xl" p="10%">
-    <Box id="about" className="about section">
+     <Container maxW="container.xl" p="10%" id="about" className="about section">
+    <Box >
       <Center fontSize={{ base: 28, md: 40 }} color="yellow" position="relative">
         <Text fontWeight={600}>About</Text>
       </Center>
